@@ -1,0 +1,31 @@
+<ng-container *ngIf="rating < 1; else elseBlock">
+    <i (click)="onClick(1)" class="bi bi-star"></i>
+</ng-container>
+<ng-template #elseBlock>
+    <i (click)="onClick(1)" class="bi bi-star-fill"></i>
+</ng-template>
+<ng-container *ngIf="rating < 2; else elseBlock2">
+    <i (click)="onClick(2)" class="bi bi-star"></i>
+</ng-container>
+<ng-template #elseBlock2>
+    <i (click)="onClick(2)" class="bi bi-star-fill"></i>
+</ng-template>
+<ng-container *ngIf="rating < 3; else elseBlock3">
+    <i (click)="onClick(3)" class="bi bi-star"></i>
+</ng-container>
+<ng-template #elseBlock3>
+    <i (click)="onClick(3)" class="bi bi-star-fill"></i>
+</ng-template>
+<ng-container *ngIf="rating < 4; else elseBlock4">
+    <i (click)="onClick(4)" class="bi bi-star"></i>
+</ng-container>
+<ng-template #elseBlock4>
+    <i (click)="onClick(4)" class="bi bi-star-fill"></i>
+</ng-template>
+<ng-container *ngIf="rating < 5; else elseBlock5">
+    <i (click)="onClick(5)" class="bi bi-star"></i>
+</ng-container>
+<ng-template #elseBlock5>
+    <i (click)="onClick(5)" class="bi bi-star-fill"></i>
+</ng-template>
+{{ numOfReviews }}
